@@ -24,12 +24,13 @@ namespace CustomerAppBll.Services
         {
             using (var uow = this.facade.UnitOfWork)
             {
-                var newCust = uow.CustomerRepository.Create(Convert(cust));
+                var newCust = uow.CustomerRepository.Create(converter.Convert(cust));
                 uow.complete();
                 return converter.Convert(newCust);
             }
         }
 
+  
         public CustomerBO Delete(int id)
         {
             using (var uow = this.facade.UnitOfWork)
@@ -53,7 +54,7 @@ namespace CustomerAppBll.Services
         {
             using (var uow = facade.UnitOfWork)
             {
-                return uow.CustomerRepository.GetAll().Select(x => Convert(x)).ToList();
+                return uow.CustomerRepository.GetAll().Select(x => converter.Convert(x)).ToList();
             }
         }
 

@@ -1,0 +1,14 @@
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\bin\Debug\netcoreapp2.1\CustomerRestApi.deps.json
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\bin\Debug\netcoreapp2.1\CustomerRestApi.runtimeconfig.json
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\bin\Debug\netcoreapp2.1\CustomerRestApi.runtimeconfig.dev.json
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\bin\Debug\netcoreapp2.1\CustomerRestApi.dll
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\bin\Debug\netcoreapp2.1\CustomerRestApi.pdb
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.csprojAssemblyReference.cache
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.csproj.CoreCompileInputs.cache
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.RazorAssemblyInfo.cache
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.RazorAssemblyInfo.cs
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.AssemblyInfoInputs.cache
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.AssemblyInfo.cs
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.RazorTargetAssemblyInfo.cache
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.dll
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.pdb

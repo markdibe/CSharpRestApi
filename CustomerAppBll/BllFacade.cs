@@ -11,7 +11,7 @@ namespace CustomerAppBll
 
         }
 
-        public ICustomerService CustomerService { get { return new CustomerService(new DalFacade()); } }
+        public ICustomerService CustomerService { get { return new CustomerService(new DalFacade(),new Converters.CustomerConverter()); } }
 
     }
 }
