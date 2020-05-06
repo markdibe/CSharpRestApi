@@ -7,6 +7,7 @@ namespace CustomerAppDAO
     public interface IUnitOfWork:IDisposable
     {
         ICustomerRepository CustomerRepository { get; }
+        IOrderRepository OrderRepository { get; }
         int complete();
     }
 }

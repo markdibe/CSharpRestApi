@@ -16,7 +16,7 @@ namespace CustomerAppDAO
 
         public IUnitOfWork UnitOfWork
         {
-            get { return new UnitOfWorkMem(); }
+            get { return new UnitOfWork(); }
         }
     }
 }

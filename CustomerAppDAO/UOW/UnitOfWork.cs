@@ -6,13 +6,13 @@ using System.Text;
 
 namespace CustomerAppDAO.UOW
 {
-    public class UnitOfWorkMem : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private CustomerAppContext _context;
         public ICustomerRepository CustomerRepository { get; internal set; }
         public IOrderRepository OrderRepository { get; internal set; }
 
-        public UnitOfWorkMem()
+        public UnitOfWork()
         {
             _context = new CustomerAppContext() ;
             CustomerRepository = new CustomerRepositoryEFMemory(_context);
