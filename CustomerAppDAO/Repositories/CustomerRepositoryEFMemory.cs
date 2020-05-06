@@ -10,8 +10,8 @@ namespace CustomerAppDAO.Repositories
 {
     class CustomerRepositoryEFMemory : ICustomerRepository
     {
-        private readonly InMemoryContext _context;
-        public CustomerRepositoryEFMemory(InMemoryContext context)
+        private readonly CustomerAppContext _context;
+        public CustomerRepositoryEFMemory(CustomerAppContext context)
         {
             _context = context;
         }

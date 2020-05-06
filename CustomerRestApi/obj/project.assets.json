@@ -4333,6 +4333,32 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "CustomerAppBll/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "CustomerAppDAO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CustomerAppBll.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerAppBll.dll": {}
+        }
+      },
+      "CustomerAppDAO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.InMemory": "2.1.0"
+        },
+        "compile": {
+          "bin/placeholder/CustomerAppDAO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerAppDAO.dll": {}
+        }
       }
     }
   },
@@ -11793,33 +11819,44 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "CustomerAppBll/1.0.0": {
+      "type": "project",
+      "path": "../CustomerAppBll/CustomerAppBll.csproj",
+      "msbuildProject": "../CustomerAppBll/CustomerAppBll.csproj"
+    },
+    "CustomerAppDAO/1.0.0": {
+      "type": "project",
+      "path": "../CustomerAppDAO/CustomerAppDAO.csproj",
+      "msbuildProject": "../CustomerAppDAO/CustomerAppDAO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "CustomerAppBll >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Antoine\\.nuget\\packages\\": {},
+    "C:\\Users\\dibem.PRESIDENCY\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Antoine\\source\\repos\\CustomerApp\\CustomerRestApi\\CustomerRestApi.csproj",
+      "projectUniqueName": "C:\\Users\\dibem.PRESIDENCY\\Desktop\\programming course\\CSharpArcitecture2017\\CSharpArcitecture2017\\CSharpRestApi\\CustomerRestApi\\CustomerRestApi.csproj",
       "projectName": "CustomerRestApi",
-      "projectPath": "C:\\Users\\Antoine\\source\\repos\\CustomerApp\\CustomerRestApi\\CustomerRestApi.csproj",
-      "packagesPath": "C:\\Users\\Antoine\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Antoine\\source\\repos\\CustomerApp\\CustomerRestApi\\obj\\",
+      "projectPath": "C:\\Users\\dibem.PRESIDENCY\\Desktop\\programming course\\CSharpArcitecture2017\\CSharpArcitecture2017\\CSharpRestApi\\CustomerRestApi\\CustomerRestApi.csproj",
+      "packagesPath": "C:\\Users\\dibem.PRESIDENCY\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dibem.PRESIDENCY\\Desktop\\programming course\\CSharpArcitecture2017\\CSharpArcitecture2017\\CSharpRestApi\\CustomerRestApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Antoine\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dibem.PRESIDENCY\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11827,11 +11864,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dibem.PRESIDENCY\\Desktop\\programming course\\CSharpArcitecture2017\\CSharpArcitecture2017\\CSharpRestApi\\CustomerAppBll\\CustomerAppBll.csproj": {
+              "projectPath": "C:\\Users\\dibem.PRESIDENCY\\Desktop\\programming course\\CSharpArcitecture2017\\CSharpArcitecture2017\\CSharpRestApi\\CustomerAppBll\\CustomerAppBll.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

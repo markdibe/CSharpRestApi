@@ -8,12 +8,15 @@ namespace CustomerAppDAO.UOW
 {
     public class UnitOfWorkMem : IUnitOfWork
     {
-        private InMemoryContext _context;
+        private CustomerAppContext _context;
         public ICustomerRepository CustomerRepository { get; internal set; }
+        public IOrderRepository OrderRepository { get; internal set; }
+
         public UnitOfWorkMem()
         {
-            _context = new InMemoryContext() ;
+            _context = new CustomerAppContext() ;
             CustomerRepository = new CustomerRepositoryEFMemory(_context);
+            OrderRepository = new OrderRepository(_context);
         }
        
 

@@ -7,18 +7,19 @@ using System.Text;
 
 namespace CustomerAppDAO.Context
 {
-    public class InMemoryContext :DbContext 
+    public class CustomerAppContext :DbContext 
     {
-        static DbContextOptions<InMemoryContext> options = 
-            new DbContextOptionsBuilder<InMemoryContext>()
+        static DbContextOptions<CustomerAppContext> options = 
+            new DbContextOptionsBuilder<CustomerAppContext>()
             .UseInMemoryDatabase("TheDB")
             .Options;
 
         //options that we want in memory
-        public InMemoryContext():base(options) 
+        public CustomerAppContext():base(options) 
         {
 
         }
         public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
     }
 }

@@ -7,3 +7,12 @@ C:\Users\Antoine\source\repos\CustomerApp\CustomerAppDAO\obj\Debug\netcoreapp2.1
 C:\Users\Antoine\source\repos\CustomerApp\CustomerAppDAO\obj\Debug\netcoreapp2.1\CustomerAppDAO.dll
 C:\Users\Antoine\source\repos\CustomerApp\CustomerAppDAO\obj\Debug\netcoreapp2.1\CustomerAppDAO.pdb
 C:\Users\Antoine\source\repos\CustomerApp\CustomerAppDAO\obj\Debug\netcoreapp2.1\CustomerAppDAO.csprojAssemblyReference.cache
+C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerAppDAO\bin\Debug\netcoreapp2.1\CustomerAppDAO.deps.json
+C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerAppDAO\bin\Debug\netcoreapp2.1\CustomerAppDAO.dll
+C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerAppDAO\bin\Debug\netcoreapp2.1\CustomerAppDAO.pdb
+C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerAppDAO\obj\Debug\netcoreapp2.1\CustomerAppDAO.csprojAssemblyReference.cache
+C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerAppDAO\obj\Debug\netcoreapp2.1\CustomerAppDAO.csproj.CoreCompileInputs.cache
+C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerAppDAO\obj\Debug\netcoreapp2.1\CustomerAppDAO.AssemblyInfoInputs.cache
+C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerAppDAO\obj\Debug\netcoreapp2.1\CustomerAppDAO.AssemblyInfo.cs
+C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerAppDAO\obj\Debug\netcoreapp2.1\CustomerAppDAO.dll
+C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerAppDAO\obj\Debug\netcoreapp2.1\CustomerAppDAO.pdb
