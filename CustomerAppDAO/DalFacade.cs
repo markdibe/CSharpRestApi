@@ -8,12 +8,6 @@ namespace CustomerAppDAO
 {
     public class DalFacade
     {
-        //public ICustomerRepository CustomerRepository
-        //{
-        //    //get { return new CustomerRepositoyFakeDB(); }
-        //    get { return new CustomerRepositoryEFMemory(new Context.InMemoryContext()); }
-        //}
-
         public IUnitOfWork UnitOfWork
         {
             get { return new UnitOfWork(); }

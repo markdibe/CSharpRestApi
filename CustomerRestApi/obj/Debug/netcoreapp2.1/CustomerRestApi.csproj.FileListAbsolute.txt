@@ -31,3 +31,8 @@ C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CShar
 C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.csproj.CopyComplete
 C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.dll
 C:\Users\dibem.PRESIDENCY\Desktop\programming course\CSharpArcitecture2017\CSharpArcitecture2017\CSharpRestApi\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.pdb
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\bin\Debug\netcoreapp2.1\CustomerAppBll.dll
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\bin\Debug\netcoreapp2.1\CustomerAppDAO.dll
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\bin\Debug\netcoreapp2.1\CustomerAppBll.pdb
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\bin\Debug\netcoreapp2.1\CustomerAppDAO.pdb
+C:\Users\Antoine\source\repos\CustomerApp\CustomerRestApi\obj\Debug\netcoreapp2.1\CustomerRestApi.csproj.CopyComplete

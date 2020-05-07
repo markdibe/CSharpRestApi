@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using CustomerAppDAO.Context;
 using CustomerAppDAO.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CustomerAppDAO.Repositories
 {
@@ -18,6 +19,10 @@ namespace CustomerAppDAO.Repositories
 
         public Order Create(Order order)
         {
+            if (order.Customer != null)
+            {
+                _context.Entry(order.Customer).State = EntityState.Unchanged;
+            }
             _context.Orders.Add(order);
             return order;
         }
@@ -37,6 +42,17 @@ namespace CustomerAppDAO.Repositories
         public List<Order> GetAll()
         {
             return _context.Orders.ToList();
+            //var list = (
+            //    from order in _context.Orders
+            //    join customer in _context.Orders on order.Id equals customer.Id
+            //    select new
+            //    {
+                    
+            //        FirstName = order.Customer.FirstName,
+            //        LastName = order.Customer.LastName
+
+            //    }
+            //    ).ToList();
         }
     }
 }

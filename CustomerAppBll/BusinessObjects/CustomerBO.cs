@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace CustomerAppBll.BusinessObjects
@@ -13,6 +14,8 @@ namespace CustomerAppBll.BusinessObjects
         [Required]
         public string LastName { get; set; }
         public string Address { get; set; }
+
+        public List<OrderBo> Orders { get; set; }
 
         public string FullName { get { return FirstName + " " + LastName; } }
     }

@@ -26,6 +26,7 @@ namespace CustomerRestApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddNodeServices(new BllFacade())
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -35,6 +36,25 @@ namespace CustomerRestApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                BllFacade facade = new BllFacade();
+                int i = 20;
+                while (i > 0)
+                {
+                   var cust =  facade.CustomerService.Create(new CustomerAppBll.BusinessObjects.CustomerBO()
+                    {
+                        Address = $"Address {new Random().Next(0,i)}",
+                        FirstName = $"First Name : {new Random().Next(0, i)}",
+                        LastName = $"Last Name : {new Random().Next(0, i)}"
+                    });
+
+                    facade.OrderService.Create(new CustomerAppBll.BusinessObjects.OrderBo()
+                    {
+                        DeliveryTime = DateTime.Now,
+                        OrderDate = DateTime.Today.AddDays(i),
+                        Customer = cust
+                    });
+                    i -= 1;
+                }
             }
             else
             {

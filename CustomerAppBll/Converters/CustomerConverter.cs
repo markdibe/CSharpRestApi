@@ -7,6 +7,7 @@ namespace CustomerAppBll.Converters
     {
         internal Customer Convert(CustomerBO cust)
         {
+            if (cust == null) { return null; }
             Customer customer = new Customer()
             {
                 Id = cust.Id,
@@ -19,6 +20,7 @@ namespace CustomerAppBll.Converters
 
         internal CustomerBO Convert(Customer cust)
         {
+            if (cust == null) { return null; }
             CustomerBO customer = new CustomerBO()
             {
                 Id = cust.Id,

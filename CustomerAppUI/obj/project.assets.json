@@ -3044,23 +3044,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dibem.PRESIDENCY\\.nuget\\packages\\": {},
+    "C:\\Users\\Antoine\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dibem.PRESIDENCY\\Desktop\\programming course\\CSharpArcitecture2017\\CSharpArcitecture2017\\CSharpRestApi\\CustomerAppUI\\CustomerAppUI.csproj",
+      "projectUniqueName": "C:\\Users\\Antoine\\source\\repos\\CustomerApp\\CustomerAppUI\\CustomerAppUI.csproj",
       "projectName": "CustomerAppUI",
-      "projectPath": "C:\\Users\\dibem.PRESIDENCY\\Desktop\\programming course\\CSharpArcitecture2017\\CSharpArcitecture2017\\CSharpRestApi\\CustomerAppUI\\CustomerAppUI.csproj",
-      "packagesPath": "C:\\Users\\dibem.PRESIDENCY\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dibem.PRESIDENCY\\Desktop\\programming course\\CSharpArcitecture2017\\CSharpArcitecture2017\\CSharpRestApi\\CustomerAppUI\\obj\\",
+      "projectPath": "C:\\Users\\Antoine\\source\\repos\\CustomerApp\\CustomerAppUI\\CustomerAppUI.csproj",
+      "packagesPath": "C:\\Users\\Antoine\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Antoine\\source\\repos\\CustomerApp\\CustomerAppUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dibem.PRESIDENCY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Antoine\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3068,13 +3068,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\dibem.PRESIDENCY\\Desktop\\programming course\\CSharpArcitecture2017\\CSharpArcitecture2017\\CSharpRestApi\\CustomerAppBll\\CustomerAppBll.csproj": {
-              "projectPath": "C:\\Users\\dibem.PRESIDENCY\\Desktop\\programming course\\CSharpArcitecture2017\\CSharpArcitecture2017\\CSharpRestApi\\CustomerAppBll\\CustomerAppBll.csproj"
+            "C:\\Users\\Antoine\\source\\repos\\CustomerApp\\CustomerAppBll\\CustomerAppBll.csproj": {
+              "projectPath": "C:\\Users\\Antoine\\source\\repos\\CustomerApp\\CustomerAppBll\\CustomerAppBll.csproj"
             }
           }
         }
