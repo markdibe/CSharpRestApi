@@ -11,12 +11,13 @@ namespace CustomerAppDAO.UOW
         private CustomerAppContext _context;
         public ICustomerRepository CustomerRepository { get; internal set; }
         public IOrderRepository OrderRepository { get; internal set; }
-
+        public IAddressRepository AddressRepository { get; internal set; }
         public UnitOfWork()
         {
             _context = new CustomerAppContext() ;
             CustomerRepository = new CustomerRepositoryEFMemory(_context);
             OrderRepository = new OrderRepository(_context);
+            AddressRepository = new AddressRepository(_context);
         }
        
 
