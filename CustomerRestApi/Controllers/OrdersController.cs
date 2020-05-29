@@ -26,7 +26,7 @@ namespace CustomerRestApi.Controllers
         }
 
         // GET: api/Orders/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}")]
         public OrderBo Get(int id)
         {
             return facade.OrderService.Get(id);

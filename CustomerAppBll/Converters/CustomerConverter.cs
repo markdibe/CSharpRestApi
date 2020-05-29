@@ -1,5 +1,6 @@
 ﻿using CustomerAppBll.BusinessObjects;
 using CustomerAppDAO.Entities;
+using System.Linq;
 
 namespace CustomerAppBll.Converters
 {
@@ -13,7 +14,10 @@ namespace CustomerAppBll.Converters
                 Id = cust.Id,
                 FirstName = cust.FirstName,
                 LastName = cust.LastName,
-                Address = cust.Address
+                Address = cust.Address,
+                Addresses = cust.AddressesId?.Select(x => new CustomerAddress() {
+                    AddressId = x, CustomerId = cust.Id
+                }).ToList()
             };
             return customer;
         }
@@ -26,7 +30,8 @@ namespace CustomerAppBll.Converters
                 Id = cust.Id,
                 FirstName = cust.FirstName,
                 LastName = cust.LastName,
-                Address = cust.Address
+                Address = cust.Address,
+                AddressesId = cust.Addresses?.Select(x=>x.AddressId).ToList(),
             };
             return customer;
         }

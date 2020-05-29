@@ -517,7 +517,8 @@
       },
       "CustomerAppBll/1.0.0": {
         "dependencies": {
-          "CustomerAppDAO": "1.0.0"
+          "CustomerAppDAO": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1"
         },
         "runtime": {
           "CustomerAppBll.dll": {}
@@ -528,7 +529,8 @@
       },
       "CustomerAppDAO/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.InMemory": "2.1.1"
+          "Microsoft.EntityFrameworkCore.InMemory": "2.1.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1"
         },
         "runtime": {
           "CustomerAppDAO.dll": {}

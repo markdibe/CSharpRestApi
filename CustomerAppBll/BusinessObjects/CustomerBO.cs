@@ -18,5 +18,10 @@ namespace CustomerAppBll.BusinessObjects
         public List<OrderBo> Orders { get; set; }
 
         public string FullName { get { return FirstName + " " + LastName; } }
+
+        public List<int> AddressesId { get; set; }
+
+       //public List<AddressBO> DetailedAddresses { get; set; }
+
     }
 }

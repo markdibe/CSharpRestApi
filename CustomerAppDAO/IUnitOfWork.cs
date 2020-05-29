@@ -8,6 +8,7 @@ namespace CustomerAppDAO
     {
         ICustomerRepository CustomerRepository { get; }
         IOrderRepository OrderRepository { get; }
+        IAddressRepository AddressRepository { get; }
         int complete();
     }
 }

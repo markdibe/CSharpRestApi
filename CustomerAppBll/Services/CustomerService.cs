@@ -30,7 +30,7 @@ namespace CustomerAppBll.Services
             }
         }
 
-  
+
         public CustomerBO Delete(int id)
         {
             using (var uow = this.facade.UnitOfWork)
@@ -39,7 +39,6 @@ namespace CustomerAppBll.Services
                 uow.complete();
                 return converter.Convert(cust);
             }
-
         }
 
         public CustomerBO Get(int id)
@@ -58,16 +57,27 @@ namespace CustomerAppBll.Services
             }
         }
 
-        public CustomerBO Update(CustomerBO cust)
+        public CustomerBO Update(CustomerBO Cust)
         {
             using (var uow = facade.UnitOfWork)
             {
-                var customer = uow.CustomerRepository.Get(cust.Id);
-                customer.FirstName = cust.FirstName;
-                customer.LastName = cust.LastName;
-                customer.Address = cust.Address;
+                Customer CustUpdated = converter.Convert(Cust);
+
+                Customer CustFromDb = uow.CustomerRepository.Get(CustUpdated.Id);
+                if (CustFromDb == null) { throw new InvalidOperationException("Customer Not Found !"); }
+                //remove from customer Database the addresses does not exist in updated customer
+                CustFromDb.Addresses
+                    .RemoveAll(x => !CustUpdated.Addresses.Exists(ca => ca.AddressId == x.AddressId && ca.CustomerId == x.CustomerId));
+
+                //remove from updated customer the addresses that already exists in database
+                CustUpdated.Addresses.RemoveAll(x => CustFromDb.Addresses.Exists(ca => ca.AddressId == x.AddressId && ca.CustomerId == x.CustomerId));
+
+                //add the rest of addresses that are new to customer address
+                CustFromDb.Addresses.AddRange(CustUpdated.Addresses);
+
                 uow.complete();
-                return converter.Convert(customer);
+
+                return converter.Convert(CustFromDb);
             }
         }
 

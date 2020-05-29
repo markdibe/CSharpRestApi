@@ -4620,7 +4620,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "CustomerAppDAO": "1.0.0"
+          "CustomerAppDAO": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0"
         },
         "compile": {
           "bin/placeholder/CustomerAppBll.dll": {}
@@ -4633,7 +4634,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.InMemory": "2.1.0"
+          "Microsoft.EntityFrameworkCore.InMemory": "2.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0"
         },
         "compile": {
           "bin/placeholder/CustomerAppDAO.dll": {}
@@ -8765,6 +8767,8 @@
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
+        "System.Diagnostics.DiagnosticSource.4.5.0.nupkg.sha512",
+        "System.Diagnostics.DiagnosticSource.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net45/System.Diagnostics.DiagnosticSource.dll",
         "lib/net45/System.Diagnostics.DiagnosticSource.xml",
@@ -8776,8 +8780,6 @@
         "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
         "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
         "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
-        "system.diagnostics.diagnosticsource.4.5.0.nupkg.sha512",
-        "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]

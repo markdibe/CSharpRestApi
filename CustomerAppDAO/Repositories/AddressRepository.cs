@@ -23,7 +23,7 @@ namespace CustomerAppDAO.Repositories
                 _context.Addresses.Add(address);
                 return address;
             }
-            catch(Exception e) { throw (e); }
+            catch (Exception e) { throw (e); }
         }
 
         public Address Delete(int id)
@@ -38,7 +38,7 @@ namespace CustomerAppDAO.Repositories
             {
                 throw (e);
             }
-            
+
         }
 
         public Address Get(int id)
@@ -47,11 +47,11 @@ namespace CustomerAppDAO.Repositories
             {
                 return _context.Addresses.FirstOrDefault(x => x.Id == id);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw (e);
             }
-            
+
         }
 
         public IEnumerable<Address> GetAll()
@@ -61,7 +61,7 @@ namespace CustomerAppDAO.Repositories
 
         public IEnumerable<Address> GetAllById(List<int> ids)
         {
-            return _context.Addresses.Where(x=>ids.Contains(x.Id));
+            return _context.Addresses.Where(x => ids.Contains(x.Id));
         }
     }
 }
