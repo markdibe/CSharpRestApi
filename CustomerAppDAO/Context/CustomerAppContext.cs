@@ -9,17 +9,7 @@ namespace CustomerAppDAO.Context
 {
     public class CustomerAppContext : DbContext
     {
-        //static DbContextOptions<CustomerAppContext> options = 
-        //    new DbContextOptionsBuilder<CustomerAppContext>()
-        //    .UseInMemoryDatabase("TheDB")
-        //    .Options;
-
-        ////options that we want in memory
-        //public CustomerAppContext():base(options) 
-        //{
-
-        //}
-
+   
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

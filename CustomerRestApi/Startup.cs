@@ -27,6 +27,17 @@ namespace CustomerRestApi
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddNodeServices(new BllFacade())
+            services.AddCors(x =>
+            {
+                x.AddPolicy("MyPolicy", options =>
+                {
+                    options.WithOrigins("http://localhost:4200")
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                });
+            });
+
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -40,9 +51,9 @@ namespace CustomerRestApi
                 int i = 20;
                 while (i > 0)
                 {
-                   var cust =  facade.CustomerService.Create(new CustomerAppBll.BusinessObjects.CustomerBO()
+                    var cust = facade.CustomerService.Create(new CustomerAppBll.BusinessObjects.CustomerBO()
                     {
-                        Address = $"Address {new Random().Next(0,i)}",
+                        Address = $"Address {new Random().Next(0, i)}",
                         FirstName = $"First Name : {new Random().Next(0, i)}",
                         LastName = $"Last Name : {new Random().Next(0, i)}"
                     });
@@ -63,6 +74,7 @@ namespace CustomerRestApi
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseCors();
         }
     }
 }

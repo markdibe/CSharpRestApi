@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CustomerAppBll;
 using CustomerAppBll.BusinessObjects;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,7 @@ namespace CustomerRestApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors(PolicyName = "MyPolicy")]
     public class CustomersController : ControllerBase
     {
         private readonly BllFacade facade;
@@ -63,26 +65,37 @@ namespace CustomerRestApi.Controllers
 
         // PUT: api/Customers/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] CustomerBO UpdatedCustomer)
+        public IActionResult Put(int id, [FromBody] CustomerBO UpdatedCustomer)
         {
             if (id == UpdatedCustomer.Id)
             {
                 try
                 {
-                    
-
+                    return Ok(facade.CustomerService.Update(UpdatedCustomer));
                 }
                 catch(Exception e)
                 {
-                    throw (e);
+                    return BadRequest(e.Message);
                 }
+            }
+            else
+            {
+                return BadRequest(ModelState);
             }
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            try
+            {
+                return Ok(facade.CustomerService.Delete(id));
+            }
+            catch(Exception e)
+            {
+                 return BadRequest(e.Message);
+            }
         }
     }
 }
