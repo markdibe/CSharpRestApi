@@ -36,7 +36,7 @@ namespace CustomerAppDAO.Context
                 .HasForeignKey(ca => ca.CustomerId);
 
             base.OnModelCreating(modelBuilder);
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
         }
 
 

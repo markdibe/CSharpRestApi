@@ -5,6 +5,7 @@ using System.Text;
 using CustomerAppDAO.Context;
 using CustomerAppDAO;
 using CustomerAppDAO.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CustomerAppDAO.Repositories
 {
@@ -34,12 +35,21 @@ namespace CustomerAppDAO.Repositories
 
         public Customer Get(int id)
         {
-            return _context.Customers.FirstOrDefault(x => x.Id == id);
+            return _context.Customers.Include(x => x.Addresses).FirstOrDefault(x => x.Id == id);
+            
+            //return _context.Customers.FirstOrDefault(x => x.Id == id);
         }
 
         public List<Customer> GetAll()
         {
             return _context.Customers.ToList();
+        }
+
+        public Customer GetWithDetailedAddress(int id)
+        {
+            Customer customer = Get(id);
+            customer.DetailedAddresses = _context.Addresses.Where(x=>customer.Addresses.Select(ac=>ac.AddressId).Contains(x.Id)).ToList();
+            return customer;
         }
     }
 }

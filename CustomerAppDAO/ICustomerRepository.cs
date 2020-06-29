@@ -18,5 +18,7 @@ namespace CustomerAppDAO
       
         //Delete
         Customer Delete(int id);
+
+        Customer GetWithDetailedAddress(int id);
     }
 }

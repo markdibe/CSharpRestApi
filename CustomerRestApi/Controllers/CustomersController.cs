@@ -49,6 +49,12 @@ namespace CustomerRestApi.Controllers
             }
         }
 
+        [HttpGet("GetWithAddress/{id}")]
+        public IActionResult GetWithAddress(int id)
+        {
+            return Ok(facade.CustomerService.GetWithDetailedAddress(id));
+        }
+
         // POST: api/Customers
         [HttpPost]
         public IActionResult Post([FromBody] CustomerBO customer)

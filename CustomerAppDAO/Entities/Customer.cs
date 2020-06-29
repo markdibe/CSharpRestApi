@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CustomerAppDAO.Entities
 {
@@ -15,6 +16,9 @@ namespace CustomerAppDAO.Entities
 
         public List<CustomerAddress> Addresses { get; set; }
         public List<Order> Orders { get; set; }
+
+        [NotMapped]
+        public virtual List<Address> DetailedAddresses { get; set; }
 
     }
 }

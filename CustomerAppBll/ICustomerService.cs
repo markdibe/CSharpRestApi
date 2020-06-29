@@ -25,5 +25,7 @@ namespace CustomerAppBll
 
         //Delete
         CustomerBO Delete(int id);
+
+        CustomerBO GetWithDetailedAddress(int id);
     }
 }

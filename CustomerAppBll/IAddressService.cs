@@ -17,6 +17,7 @@ namespace CustomerAppBll
 
         List<AddressBO> GetAll();
 
+        
 
     }
 }

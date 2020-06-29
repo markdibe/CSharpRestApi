@@ -1,7 +1,7 @@
 ﻿using CustomerAppBll.BusinessObjects;
 using CustomerAppDAO.Entities;
 using System.Linq;
-
+using CustomerAppBll.Converters;
 namespace CustomerAppBll.Converters
 {
     public class CustomerConverter
@@ -31,7 +31,8 @@ namespace CustomerAppBll.Converters
                 FirstName = cust.FirstName,
                 LastName = cust.LastName,
                 Address = cust.Address,
-                AddressesId = cust.Addresses?.Select(x=>x.AddressId).ToList(),
+                AddressesId = cust.Addresses?.Select(x => x.AddressId).ToList(),
+                DetailedAddresses = cust.DetailedAddresses?.Select(x=>new AddressConverter().Convert(x)).ToList()
             };
             return customer;
         }

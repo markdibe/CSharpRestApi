@@ -4,13 +4,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using CustomerAppBll;
 using CustomerAppBll.BusinessObjects;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CustomerRestApi.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("MyPolicy")]
     public class AddressesController : ControllerBase
     {
         private BllFacade facade;
@@ -28,7 +31,7 @@ namespace CustomerRestApi.Controllers
         {
             try
             {
-                 return  Ok(facade.AddressService.GetAll().ToAsyncEnumerable());
+                return Ok(facade.AddressService.GetAll().ToAsyncEnumerable());
             }
             catch (Exception e) { throw (e); }
         }
@@ -42,8 +45,9 @@ namespace CustomerRestApi.Controllers
 
         // POST: api/Addresses
         [HttpPost]
-        public void Post([FromBody] string value)
+        public AddressBO Post([FromBody] AddressBO address)
         {
+            return facade.AddressService.Create(address);
         }
 
         // PUT: api/Addresses/5

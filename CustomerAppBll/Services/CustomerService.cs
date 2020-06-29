@@ -57,6 +57,14 @@ namespace CustomerAppBll.Services
             }
         }
 
+        public CustomerBO GetWithDetailedAddress(int id)
+        {
+            using(var uow = facade.UnitOfWork)
+            {
+                return converter.Convert(uow.CustomerRepository.GetWithDetailedAddress(id));
+            }
+        }
+
         public CustomerBO Update(CustomerBO Cust)
         {
             using (var uow = facade.UnitOfWork)

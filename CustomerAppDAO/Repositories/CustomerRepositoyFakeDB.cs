@@ -45,6 +45,11 @@ namespace CustomerAppDAO.Repositories
             return new List<Customer>(customers.ToList());
         }
 
+        public Customer GetWithDetailedAddress(int id)
+        {
+            return customers.FirstOrDefault(x => x.Id == id);
+        }
+
         public Customer Update(Customer cust)
         {
             Customer customer = Get(cust.Id);
@@ -57,6 +62,8 @@ namespace CustomerAppDAO.Repositories
             customer.Address = cust.Address;
             return customer;
         }
+
+
 
         #endregion
 

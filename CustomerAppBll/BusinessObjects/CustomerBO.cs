@@ -9,7 +9,7 @@ namespace CustomerAppBll.BusinessObjects
         public int Id { get; set; }
         [Required]
         [MaxLength(20)]
-        [MinLength(10)]
+        [MinLength(2)]
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
@@ -21,7 +21,7 @@ namespace CustomerAppBll.BusinessObjects
 
         public List<int> AddressesId { get; set; }
 
-       //public List<AddressBO> DetailedAddresses { get; set; }
+        public List<AddressBO> DetailedAddresses { get; set; }
 
     }
 }
